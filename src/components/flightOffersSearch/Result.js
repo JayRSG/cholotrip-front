@@ -40,7 +40,7 @@ const Result = ({ result, dictionaries }) => {
 								}`}>
 								{result?.itineraries[0]?.segments?.map((iter, ind) => (
 									<div className={`flex `} key={"iter" + ind}>
-										<div className='flex flex-col mr-3'>
+										<div className='flex flex-col mr-4'>
 											<div className='font-bold font-title w-[6rem]'>
 												<h1>{dictionaries?.carriers[iter?.carrierCode]}</h1>
 											</div>
@@ -123,7 +123,7 @@ const Result = ({ result, dictionaries }) => {
 								}`}>
 								{result?.itineraries[1]?.segments?.map((iter, ind) => (
 									<div className='flex' key={"iter" + ind}>
-										<div className='flex flex-col mr-3'>
+										<div className='flex flex-col mr-4'>
 											<div className='font-bold font-title w-[6rem]'>
 												<h1>{dictionaries?.carriers[iter?.carrierCode]}</h1>
 											</div>
