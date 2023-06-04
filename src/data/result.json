@@ -1,8 +1,8 @@
 {
   "meta": {
-      "count": 11,
+      "count": 20,
       "links": {
-          "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=CGP&destinationLocationCode=MAA&departureDate=2023-06-18&returnDate=2023-07-02&adults=1&max=20"
+          "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=DEL&destinationLocationCode=MAA&departureDate=2023-06-18&returnDate=2023-07-02&adults=1&max=20&children=1"
       }
   },
   "data": [
@@ -13,78 +13,33 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
-          "numberOfBookableSeats": 4,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT23H40M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "564",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "1",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "2",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T07:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T17:25:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T08:50:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T20:15:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "121",
+                          "carrierCode": "UK",
+                          "number": "837",
                           "aircraft": {
-                              "code": "333"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
+                          "duration": "PT2H50M",
                           "id": "3",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
@@ -92,74 +47,29 @@
                   ]
               },
               {
-                  "duration": "PT16H5M",
+                  "duration": "PT3H",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T16:05:00"
+                              "terminal": "1",
+                              "at": "2023-07-02T21:05:00"
                           },
                           "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T17:30:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-03T00:05:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "128",
+                          "carrierCode": "UK",
+                          "number": "838",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "16",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "17",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "593",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H20M",
-                          "id": "18",
+                          "duration": "PT3H",
+                          "id": "7",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -168,8 +78,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "292.76",
+              "base": "248.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -180,16 +90,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "292.76"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -198,69 +108,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "146.38",
+                      "base": "124.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "1",
+                          "segmentId": "3",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "2",
+                          "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
-                      },
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "146.38",
+                      "base": "124.00"
+                  },
+                  "fareDetailsBySegment": [
                       {
                           "segmentId": "3",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "16",
+                          "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "17",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "18",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -273,78 +171,33 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
-          "numberOfBookableSeats": 4,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT23H40M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "564",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "1",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "2",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T07:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T17:25:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T08:50:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T20:15:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "121",
+                          "carrierCode": "UK",
+                          "number": "837",
                           "aircraft": {
-                              "code": "333"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
+                          "duration": "PT2H50M",
                           "id": "3",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
@@ -352,74 +205,29 @@
                   ]
               },
               {
-                  "duration": "PT22H10M",
+                  "duration": "PT2H35M",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T10:00:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T11:25:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "122",
-                          "aircraft": {
-                              "code": "333"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT1H25M",
-                          "id": "19",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
                               "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "20",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
+                              "at": "2023-07-02T11:20:00"
                           },
                           "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T13:55:00"
                           },
-                          "carrierCode": "FZ",
-                          "number": "593",
+                          "carrierCode": "UK",
+                          "number": "836",
                           "aircraft": {
-                              "code": "73H"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "FZ"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT5H20M",
-                          "id": "21",
+                          "duration": "PT2H35M",
+                          "id": "8",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -428,8 +236,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "294.86",
+              "base": "250.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -440,16 +248,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "294.86"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -458,69 +266,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "147.43",
+                      "base": "125.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "1",
+                          "segmentId": "3",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "2",
+                          "segmentId": "8",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
-                      },
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "147.43",
+                      "base": "125.00"
+                  },
+                  "fareDetailsBySegment": [
                       {
                           "segmentId": "3",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "19",
+                          "segmentId": "8",
                           "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "20",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "21",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -533,153 +329,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
-          "numberOfBookableSeats": 4,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT29H55M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "564",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "10",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "11",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T13:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T17:25:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T15:05:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T20:15:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "127",
+                          "carrierCode": "UK",
+                          "number": "837",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "12",
+                          "duration": "PT2H50M",
+                          "id": "3",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT16H5M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T16:05:00"
+                              "terminal": "1",
+                              "at": "2023-07-02T07:05:00"
                           },
                           "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T17:30:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T09:55:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "128",
+                          "carrierCode": "UK",
+                          "number": "832",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "16",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "17",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "593",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H20M",
-                          "id": "18",
+                          "duration": "PT2H50M",
+                          "id": "10",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -688,8 +394,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "294.86",
+              "base": "250.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -700,16 +406,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "294.86"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -718,69 +424,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "147.43",
+                      "base": "125.00"
                   },
                   "fareDetailsBySegment": [
                       {
+                          "segmentId": "3",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      },
+                      {
                           "segmentId": "10",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "147.43",
+                      "base": "125.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "3",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "11",
+                          "segmentId": "10",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "12",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "16",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "17",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "18",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -793,153 +487,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
-          "numberOfBookableSeats": 4,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT29H55M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "564",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "10",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "11",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T13:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T07:20:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T15:05:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T10:10:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "127",
+                          "carrierCode": "UK",
+                          "number": "833",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "12",
+                          "duration": "PT2H50M",
+                          "id": "1",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT22H10M",
+                  "duration": "PT3H",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T10:00:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T11:25:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "122",
-                          "aircraft": {
-                              "code": "333"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT1H25M",
-                          "id": "19",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
                               "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "20",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
+                              "at": "2023-07-02T21:05:00"
                           },
                           "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-03T00:05:00"
                           },
-                          "carrierCode": "FZ",
-                          "number": "593",
+                          "carrierCode": "UK",
+                          "number": "838",
                           "aircraft": {
-                              "code": "73H"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "FZ"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT5H20M",
-                          "id": "21",
+                          "duration": "PT3H",
+                          "id": "7",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -948,8 +552,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "294.86",
+              "base": "250.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -960,16 +564,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "294.86"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -978,69 +582,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "147.43",
+                      "base": "125.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "10",
+                          "segmentId": "1",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "11",
+                          "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "147.43",
+                      "base": "125.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "1",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "12",
+                          "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "19",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "20",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "21",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -1053,153 +645,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
           "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT23H40M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "594",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "4",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "5",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T07:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T13:45:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T08:50:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T16:35:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "121",
+                          "carrierCode": "UK",
+                          "number": "839",
                           "aircraft": {
-                              "code": "333"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "6",
+                          "duration": "PT2H50M",
+                          "id": "2",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT16H5M",
+                  "duration": "PT3H",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T16:05:00"
+                              "terminal": "1",
+                              "at": "2023-07-02T21:05:00"
                           },
                           "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T17:30:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-03T00:05:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "128",
+                          "carrierCode": "UK",
+                          "number": "838",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "16",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "17",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "593",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H20M",
-                          "id": "18",
+                          "duration": "PT3H",
+                          "id": "7",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -1208,8 +710,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "294.86",
+              "base": "250.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -1220,16 +722,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "294.86"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -1238,69 +740,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "147.43",
+                      "base": "125.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "4",
+                          "segmentId": "2",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "5",
+                          "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "147.43",
+                      "base": "125.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "2",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "6",
+                          "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "16",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "17",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "18",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -1313,153 +803,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
           "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT23H40M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "594",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "4",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "5",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T07:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T07:20:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T08:50:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T10:10:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "121",
+                          "carrierCode": "UK",
+                          "number": "833",
                           "aircraft": {
-                              "code": "333"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "6",
+                          "duration": "PT2H50M",
+                          "id": "1",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT22H10M",
+                  "duration": "PT2H35M",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T10:00:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T11:25:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "122",
-                          "aircraft": {
-                              "code": "333"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT1H25M",
-                          "id": "19",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
                               "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "20",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
+                              "at": "2023-07-02T11:20:00"
                           },
                           "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T13:55:00"
                           },
-                          "carrierCode": "FZ",
-                          "number": "593",
+                          "carrierCode": "UK",
+                          "number": "836",
                           "aircraft": {
-                              "code": "73H"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "FZ"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT5H20M",
-                          "id": "21",
+                          "duration": "PT2H35M",
+                          "id": "8",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -1468,8 +868,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "296.96",
+              "base": "252.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -1480,16 +880,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "296.96"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -1498,69 +898,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "148.48",
+                      "base": "126.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "4",
+                          "segmentId": "1",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "5",
+                          "segmentId": "8",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "148.48",
+                      "base": "126.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "1",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "6",
+                          "segmentId": "8",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "19",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "20",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "21",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -1573,153 +961,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
           "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT29H55M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "594",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "13",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "14",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T13:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T13:45:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T15:05:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T16:35:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "127",
+                          "carrierCode": "UK",
+                          "number": "839",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "15",
+                          "duration": "PT2H50M",
+                          "id": "2",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT16H5M",
+                  "duration": "PT2H35M",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T16:05:00"
+                              "terminal": "1",
+                              "at": "2023-07-02T11:20:00"
                           },
                           "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T17:30:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T13:55:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "128",
+                          "carrierCode": "UK",
+                          "number": "836",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "16",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "17",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "593",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H20M",
-                          "id": "18",
+                          "duration": "PT2H35M",
+                          "id": "8",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -1728,8 +1026,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "296.96",
+              "base": "252.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -1740,16 +1038,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "296.96"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -1758,69 +1056,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "148.48",
+                      "base": "126.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "13",
+                          "segmentId": "2",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "14",
+                          "segmentId": "8",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "148.48",
+                      "base": "126.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "2",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "15",
+                          "segmentId": "8",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "16",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "17",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "18",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -1833,153 +1119,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-15",
-          "lastTicketingDateTime": "2023-06-15",
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
           "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT29H55M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:40:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-06-18T13:15:00"
-                          },
-                          "carrierCode": "FZ",
-                          "number": "594",
-                          "aircraft": {
-                              "code": "73H"
-                          },
-                          "operating": {
-                              "carrierCode": "FZ"
-                          },
-                          "duration": "PT5H35M",
-                          "id": "13",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "1",
-                              "at": "2023-06-18T22:50:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T04:45:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "226",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H25M",
-                          "id": "14",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-06-19T13:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T07:20:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "3",
-                              "at": "2023-06-19T15:05:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T10:10:00"
                           },
-                          "carrierCode": "UL",
-                          "number": "127",
+                          "carrierCode": "UK",
+                          "number": "833",
                           "aircraft": {
                               "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "UL"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT1H25M",
-                          "id": "15",
+                          "duration": "PT2H50M",
+                          "id": "1",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT22H10M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T10:00:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T11:25:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "122",
-                          "aircraft": {
-                              "code": "333"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT1H25M",
-                          "id": "19",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "CMB",
-                              "at": "2023-07-02T18:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DXB",
                               "terminal": "1",
-                              "at": "2023-07-02T21:40:00"
-                          },
-                          "carrierCode": "UL",
-                          "number": "225",
-                          "aircraft": {
-                              "code": "332"
-                          },
-                          "operating": {
-                              "carrierCode": "UL"
-                          },
-                          "duration": "PT4H45M",
-                          "id": "20",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DXB",
-                              "terminal": "2",
-                              "at": "2023-07-03T01:20:00"
+                              "at": "2023-07-02T07:05:00"
                           },
                           "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:40:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T09:55:00"
                           },
-                          "carrierCode": "FZ",
-                          "number": "593",
+                          "carrierCode": "UK",
+                          "number": "832",
                           "aircraft": {
-                              "code": "73H"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "FZ"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT5H20M",
-                          "id": "21",
+                          "duration": "PT2H50M",
+                          "id": "10",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -1988,8 +1184,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "857.42",
-              "base": "745.00",
+              "total": "296.96",
+              "base": "252.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -2000,16 +1196,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "857.42"
+              "grandTotal": "296.96"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "HR"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -2018,69 +1214,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "857.42",
-                      "base": "745.00"
+                      "total": "148.48",
+                      "base": "126.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "13",
+                          "segmentId": "1",
                           "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "14",
+                          "segmentId": "10",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "148.48",
+                      "base": "126.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "1",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "15",
+                          "segmentId": "10",
                           "cabin": "ECONOMY",
-                          "fareBasis": "RE6MAE",
-                          "class": "R",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "19",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "20",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "OS3M1AE",
-                          "class": "O",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "21",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "WRLP7BD1",
-                          "class": "W",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -2093,156 +1277,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-05",
-          "lastTicketingDateTime": "2023-06-05",
-          "numberOfBookableSeats": 1,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT25H50M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-06-18T10:10:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "612",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT45M",
-                          "id": "7",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-06-18T19:15:00"
-                          },
-                          "arrival": {
-                              "iataCode": "KUL",
-                              "terminal": "M",
-                              "at": "2023-06-19T01:10:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "386",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT3H55M",
-                          "id": "8",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "KUL",
-                              "terminal": "1",
-                              "at": "2023-06-19T09:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T13:45:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-06-19T10:45:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T16:35:00"
                           },
-                          "carrierCode": "MH",
-                          "number": "182",
+                          "carrierCode": "UK",
+                          "number": "839",
                           "aircraft": {
-                              "code": "738"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "MH"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT3H50M",
-                          "id": "9",
+                          "duration": "PT2H50M",
+                          "id": "2",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT20H30M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T11:45:00"
-                          },
-                          "arrival": {
-                              "iataCode": "KUL",
                               "terminal": "1",
-                              "at": "2023-07-02T18:20:00"
-                          },
-                          "carrierCode": "MH",
-                          "number": "183",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "MH"
-                          },
-                          "duration": "PT4H5M",
-                          "id": "28",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "KUL",
-                              "terminal": "M",
-                              "at": "2023-07-03T02:30:00"
+                              "at": "2023-07-02T07:05:00"
                           },
                           "arrival": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-07-03T04:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T09:55:00"
                           },
-                          "carrierCode": "BG",
-                          "number": "387",
+                          "carrierCode": "UK",
+                          "number": "832",
                           "aircraft": {
-                              "code": "738"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "BG"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT3H55M",
-                          "id": "29",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DAC",
-                              "at": "2023-07-03T08:00:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T08:45:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "611",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT45M",
-                          "id": "30",
+                          "duration": "PT2H50M",
+                          "id": "10",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -2251,8 +1342,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "2202.04",
-              "base": "2151.00",
+              "total": "296.96",
+              "base": "252.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -2263,16 +1354,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "2202.04"
+              "grandTotal": "296.96"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "BG"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -2281,69 +1372,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "2202.04",
-                      "base": "2151.00"
+                      "total": "148.48",
+                      "base": "126.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "7",
+                          "segmentId": "2",
                           "cabin": "ECONOMY",
-                          "fareBasis": "BBD3M",
-                          "class": "B",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 20,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "8",
+                          "segmentId": "10",
                           "cabin": "ECONOMY",
-                          "fareBasis": "BBD3M",
-                          "class": "B",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 20,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "148.48",
+                      "base": "126.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "2",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "9",
+                          "segmentId": "10",
                           "cabin": "ECONOMY",
-                          "fareBasis": "YIFMH",
-                          "class": "Y",
-                          "includedCheckedBags": {
-                              "weight": 20,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "28",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "YIFMH",
-                          "class": "Y",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "29",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "KBD3M",
-                          "class": "K",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "30",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "KBD3M",
-                          "class": "K",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -2356,156 +1435,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-05",
-          "lastTicketingDateTime": "2023-06-05",
-          "numberOfBookableSeats": 1,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT25H50M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-06-18T10:10:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "612",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT45M",
-                          "id": "7",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-06-18T19:15:00"
-                          },
-                          "arrival": {
-                              "iataCode": "KUL",
-                              "terminal": "M",
-                              "at": "2023-06-19T01:10:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "386",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT3H55M",
-                          "id": "8",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "KUL",
-                              "terminal": "1",
-                              "at": "2023-06-19T09:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T19:55:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-06-19T10:45:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T22:45:00"
                           },
-                          "carrierCode": "MH",
-                          "number": "182",
+                          "carrierCode": "UK",
+                          "number": "835",
                           "aircraft": {
-                              "code": "738"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "MH"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT3H50M",
-                          "id": "9",
+                          "duration": "PT2H50M",
+                          "id": "4",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT28H15M",
+                  "duration": "PT3H",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T11:45:00"
-                          },
-                          "arrival": {
-                              "iataCode": "KUL",
                               "terminal": "1",
-                              "at": "2023-07-02T18:20:00"
-                          },
-                          "carrierCode": "MH",
-                          "number": "183",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "MH"
-                          },
-                          "duration": "PT4H5M",
-                          "id": "22",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "KUL",
-                              "terminal": "M",
-                              "at": "2023-07-03T02:30:00"
+                              "at": "2023-07-02T21:05:00"
                           },
                           "arrival": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-07-03T04:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-03T00:05:00"
                           },
-                          "carrierCode": "BG",
-                          "number": "387",
+                          "carrierCode": "UK",
+                          "number": "838",
                           "aircraft": {
-                              "code": "738"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "BG"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT3H55M",
-                          "id": "23",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DAC",
-                              "at": "2023-07-03T15:45:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T16:30:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "615",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT45M",
-                          "id": "24",
+                          "duration": "PT3H",
+                          "id": "7",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -2514,8 +1500,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "2202.04",
-              "base": "2151.00",
+              "total": "296.96",
+              "base": "252.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -2526,16 +1512,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "2202.04"
+              "grandTotal": "296.96"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "BG"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -2544,69 +1530,57 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "2202.04",
-                      "base": "2151.00"
+                      "total": "148.48",
+                      "base": "126.00"
                   },
                   "fareDetailsBySegment": [
                       {
+                          "segmentId": "4",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      },
+                      {
                           "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "BBD3M",
-                          "class": "B",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 20,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "148.48",
+                      "base": "126.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "4",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       },
                       {
-                          "segmentId": "8",
+                          "segmentId": "7",
                           "cabin": "ECONOMY",
-                          "fareBasis": "BBD3M",
-                          "class": "B",
-                          "includedCheckedBags": {
-                              "weight": 20,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "9",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "YIFMH",
-                          "class": "Y",
-                          "includedCheckedBags": {
-                              "weight": 20,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "22",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "YIFMH",
-                          "class": "Y",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "23",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "KBD3M",
-                          "class": "K",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
-                      },
-                      {
-                          "segmentId": "24",
-                          "cabin": "ECONOMY",
-                          "fareBasis": "KBD3M",
-                          "class": "K",
-                          "includedCheckedBags": {
-                              "weight": 30,
-                              "weightUnit": "KG"
-                          }
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
                       }
                   ]
               }
@@ -2619,156 +1593,63 @@
           "instantTicketingRequired": false,
           "nonHomogeneous": false,
           "oneWay": false,
-          "lastTicketingDate": "2023-06-05",
-          "lastTicketingDateTime": "2023-06-05",
-          "numberOfBookableSeats": 1,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
           "itineraries": [
               {
-                  "duration": "PT25H50M",
+                  "duration": "PT2H50M",
                   "segments": [
                       {
                           "departure": {
-                              "iataCode": "CGP",
-                              "at": "2023-06-18T09:25:00"
-                          },
-                          "arrival": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-06-18T10:10:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "612",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT45M",
-                          "id": "7",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-06-18T19:15:00"
-                          },
-                          "arrival": {
-                              "iataCode": "KUL",
-                              "terminal": "M",
-                              "at": "2023-06-19T01:10:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "386",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT3H55M",
-                          "id": "8",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "KUL",
-                              "terminal": "1",
-                              "at": "2023-06-19T09:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T19:55:00"
                           },
                           "arrival": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-06-19T10:45:00"
+                              "terminal": "1",
+                              "at": "2023-06-18T22:45:00"
                           },
-                          "carrierCode": "MH",
-                          "number": "182",
+                          "carrierCode": "UK",
+                          "number": "835",
                           "aircraft": {
-                              "code": "738"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "MH"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT3H50M",
-                          "id": "9",
+                          "duration": "PT2H50M",
+                          "id": "4",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
                   ]
               },
               {
-                  "duration": "PT32H25M",
+                  "duration": "PT2H35M",
                   "segments": [
                       {
                           "departure": {
                               "iataCode": "MAA",
-                              "terminal": "4",
-                              "at": "2023-07-02T11:45:00"
-                          },
-                          "arrival": {
-                              "iataCode": "KUL",
                               "terminal": "1",
-                              "at": "2023-07-02T18:20:00"
-                          },
-                          "carrierCode": "MH",
-                          "number": "183",
-                          "aircraft": {
-                              "code": "738"
-                          },
-                          "operating": {
-                              "carrierCode": "MH"
-                          },
-                          "duration": "PT4H5M",
-                          "id": "25",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "KUL",
-                              "terminal": "M",
-                              "at": "2023-07-03T02:30:00"
+                              "at": "2023-07-02T11:20:00"
                           },
                           "arrival": {
-                              "iataCode": "DAC",
-                              "terminal": "2",
-                              "at": "2023-07-03T04:25:00"
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T13:55:00"
                           },
-                          "carrierCode": "BG",
-                          "number": "387",
+                          "carrierCode": "UK",
+                          "number": "836",
                           "aircraft": {
-                              "code": "738"
+                              "code": "320"
                           },
                           "operating": {
-                              "carrierCode": "BG"
+                              "carrierCode": "UK"
                           },
-                          "duration": "PT3H55M",
-                          "id": "26",
-                          "numberOfStops": 0,
-                          "blacklistedInEU": false
-                      },
-                      {
-                          "departure": {
-                              "iataCode": "DAC",
-                              "at": "2023-07-03T19:45:00"
-                          },
-                          "arrival": {
-                              "iataCode": "CGP",
-                              "at": "2023-07-03T20:40:00"
-                          },
-                          "carrierCode": "BG",
-                          "number": "617",
-                          "aircraft": {
-                              "code": "DH8"
-                          },
-                          "operating": {
-                              "carrierCode": "BG"
-                          },
-                          "duration": "PT55M",
-                          "id": "27",
+                          "duration": "PT2H35M",
+                          "id": "8",
                           "numberOfStops": 0,
                           "blacklistedInEU": false
                       }
@@ -2777,8 +1658,8 @@
           ],
           "price": {
               "currency": "EUR",
-              "total": "2202.04",
-              "base": "2151.00",
+              "total": "299.06",
+              "base": "254.00",
               "fees": [
                   {
                       "amount": "0.00",
@@ -2789,16 +1670,16 @@
                       "type": "TICKETING"
                   }
               ],
-              "grandTotal": "2202.04"
+              "grandTotal": "299.06"
           },
           "pricingOptions": {
               "fareType": [
                   "PUBLISHED"
               ],
-              "includedCheckedBagsOnly": true
+              "includedCheckedBagsOnly": false
           },
           "validatingAirlineCodes": [
-              "BG"
+              "UK"
           ],
           "travelerPricings": [
               {
@@ -2807,69 +1688,1463 @@
                   "travelerType": "ADULT",
                   "price": {
                       "currency": "EUR",
-                      "total": "2202.04",
-                      "base": "2151.00"
+                      "total": "149.53",
+                      "base": "127.00"
                   },
                   "fareDetailsBySegment": [
                       {
-                          "segmentId": "7",
+                          "segmentId": "4",
                           "cabin": "ECONOMY",
-                          "fareBasis": "BBD3M",
-                          "class": "B",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 20,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
                           "segmentId": "8",
                           "cabin": "ECONOMY",
-                          "fareBasis": "BBD3M",
-                          "class": "B",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 20,
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "149.53",
+                      "base": "127.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "4",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      },
+                      {
+                          "segmentId": "8",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "12",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H50M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T19:55:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T22:45:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "835",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H50M",
+                          "id": "4",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H50M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T07:05:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T09:55:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "832",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H50M",
+                          "id": "10",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "299.06",
+              "base": "254.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "299.06"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "UK"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "149.53",
+                      "base": "127.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "4",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      },
+                      {
+                          "segmentId": "10",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "149.53",
+                      "base": "127.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "4",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      },
+                      {
+                          "segmentId": "10",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "13",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H50M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T17:25:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T20:15:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "837",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H50M",
+                          "id": "3",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H45M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T17:25:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T20:10:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "834",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H45M",
+                          "id": "9",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "299.06",
+              "base": "254.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "299.06"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "UK"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "149.53",
+                      "base": "127.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "3",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
                           "segmentId": "9",
                           "cabin": "ECONOMY",
-                          "fareBasis": "YIFMH",
-                          "class": "Y",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 20,
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "149.53",
+                      "base": "127.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "3",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      },
+                      {
+                          "segmentId": "9",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "14",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H50M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T07:20:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T10:10:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "833",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H50M",
+                          "id": "1",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H45M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T17:25:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T20:10:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "834",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H45M",
+                          "id": "9",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "301.16",
+              "base": "256.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "301.16"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "UK"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "150.58",
+                      "base": "128.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "1",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "25",
+                          "segmentId": "9",
                           "cabin": "ECONOMY",
-                          "fareBasis": "YIFMH",
-                          "class": "Y",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "150.58",
+                      "base": "128.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "1",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      },
+                      {
+                          "segmentId": "9",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "15",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H50M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T13:45:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T16:35:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "839",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H50M",
+                          "id": "2",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H45M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T17:25:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T20:10:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "834",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H45M",
+                          "id": "9",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "301.16",
+              "base": "256.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "301.16"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "UK"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "150.58",
+                      "base": "128.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "2",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "26",
+                          "segmentId": "9",
                           "cabin": "ECONOMY",
-                          "fareBasis": "KBD3M",
-                          "class": "K",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "150.58",
+                      "base": "128.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "2",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      },
+                      {
+                          "segmentId": "9",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "16",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-04",
+          "lastTicketingDateTime": "2023-06-04",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H50M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T19:55:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T22:45:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "835",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H50M",
+                          "id": "4",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H45M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T17:25:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T20:10:00"
+                          },
+                          "carrierCode": "UK",
+                          "number": "834",
+                          "aircraft": {
+                              "code": "320"
+                          },
+                          "operating": {
+                              "carrierCode": "UK"
+                          },
+                          "duration": "PT2H45M",
+                          "id": "9",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "301.16",
+              "base": "256.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "301.16"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "UK"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "150.58",
+                      "base": "128.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "4",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
+                          "includedCheckedBags": {
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
                       },
                       {
-                          "segmentId": "27",
+                          "segmentId": "9",
                           "cabin": "ECONOMY",
-                          "fareBasis": "KBD3M",
-                          "class": "K",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V",
                           "includedCheckedBags": {
-                              "weight": 30,
+                              "weight": 15,
                               "weightUnit": "KG"
                           }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "150.58",
+                      "base": "128.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "4",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      },
+                      {
+                          "segmentId": "9",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "V0RPRYS",
+                          "brandedFare": "ECOYS",
+                          "class": "V"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "17",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-18",
+          "lastTicketingDateTime": "2023-06-18",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T09:45:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T12:40:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "429",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "5",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T06:00:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T08:55:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "440",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "11",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "336.82",
+              "base": "290.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "336.82"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "AI"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "5",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      },
+                      {
+                          "segmentId": "11",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "5",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
+                      },
+                      {
+                          "segmentId": "11",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "18",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-18",
+          "lastTicketingDateTime": "2023-06-18",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T09:45:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T12:40:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "429",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "5",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T16:55:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T19:50:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "539",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "12",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "336.82",
+              "base": "290.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "336.82"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "AI"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "5",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      },
+                      {
+                          "segmentId": "12",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "5",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
+                      },
+                      {
+                          "segmentId": "12",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "19",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-18",
+          "lastTicketingDateTime": "2023-06-18",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T20:40:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T23:35:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "540",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "6",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T06:00:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T08:55:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "440",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "11",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "336.82",
+              "base": "290.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "336.82"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "AI"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "6",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      },
+                      {
+                          "segmentId": "11",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "6",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
+                      },
+                      {
+                          "segmentId": "11",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "flight-offer",
+          "id": "20",
+          "source": "GDS",
+          "instantTicketingRequired": false,
+          "nonHomogeneous": false,
+          "oneWay": false,
+          "lastTicketingDate": "2023-06-18",
+          "lastTicketingDateTime": "2023-06-18",
+          "numberOfBookableSeats": 9,
+          "itineraries": [
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-06-18T20:40:00"
+                          },
+                          "arrival": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-06-18T23:35:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "540",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "6",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              },
+              {
+                  "duration": "PT2H55M",
+                  "segments": [
+                      {
+                          "departure": {
+                              "iataCode": "MAA",
+                              "terminal": "1",
+                              "at": "2023-07-02T16:55:00"
+                          },
+                          "arrival": {
+                              "iataCode": "DEL",
+                              "terminal": "3",
+                              "at": "2023-07-02T19:50:00"
+                          },
+                          "carrierCode": "AI",
+                          "number": "539",
+                          "aircraft": {
+                              "code": "321"
+                          },
+                          "operating": {
+                              "carrierCode": "AI"
+                          },
+                          "duration": "PT2H55M",
+                          "id": "12",
+                          "numberOfStops": 0,
+                          "blacklistedInEU": false
+                      }
+                  ]
+              }
+          ],
+          "price": {
+              "currency": "EUR",
+              "total": "336.82",
+              "base": "290.00",
+              "fees": [
+                  {
+                      "amount": "0.00",
+                      "type": "SUPPLIER"
+                  },
+                  {
+                      "amount": "0.00",
+                      "type": "TICKETING"
+                  }
+              ],
+              "grandTotal": "336.82"
+          },
+          "pricingOptions": {
+              "fareType": [
+                  "PUBLISHED"
+              ],
+              "includedCheckedBagsOnly": false
+          },
+          "validatingAirlineCodes": [
+              "AI"
+          ],
+          "travelerPricings": [
+              {
+                  "travelerId": "1",
+                  "fareOption": "STANDARD",
+                  "travelerType": "ADULT",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "6",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      },
+                      {
+                          "segmentId": "12",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFS",
+                          "class": "U",
+                          "includedCheckedBags": {
+                              "weight": 25,
+                              "weightUnit": "KG"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "travelerId": "2",
+                  "fareOption": "STANDARD",
+                  "travelerType": "CHILD",
+                  "price": {
+                      "currency": "EUR",
+                      "total": "168.41",
+                      "base": "145.00"
+                  },
+                  "fareDetailsBySegment": [
+                      {
+                          "segmentId": "6",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
+                      },
+                      {
+                          "segmentId": "12",
+                          "cabin": "ECONOMY",
+                          "fareBasis": "UIPFSCH",
+                          "class": "U"
                       }
                   ]
               }
@@ -2878,47 +3153,25 @@
   ],
   "dictionaries": {
       "locations": {
-          "KUL": {
-              "cityCode": "KUL",
-              "countryCode": "MY"
-          },
-          "DAC": {
-              "cityCode": "DAC",
-              "countryCode": "BD"
-          },
-          "CMB": {
-              "cityCode": "CMB",
-              "countryCode": "LK"
+          "DEL": {
+              "cityCode": "DEL",
+              "countryCode": "IN"
           },
           "MAA": {
               "cityCode": "MAA",
               "countryCode": "IN"
-          },
-          "CGP": {
-              "cityCode": "CGP",
-              "countryCode": "BD"
-          },
-          "DXB": {
-              "cityCode": "DXB",
-              "countryCode": "AE"
           }
       },
       "aircraft": {
           "320": "AIRBUS A320",
-          "332": "AIRBUS A330-200",
-          "333": "AIRBUS A330-300",
-          "DH8": "DE HAVILLAND DHC-8 DASH 8",
-          "73H": "BOEING 737-800 (WINGLETS)",
-          "738": "BOEING 737-800"
+          "321": "AIRBUS A321"
       },
       "currencies": {
           "EUR": "EURO"
       },
       "carriers": {
-          "FZ": "FLYDUBAI",
-          "BG": "BIMAN BANGLADESH AIRLINE",
-          "UL": "SRILANKAN AIRLINES",
-          "MH": "MALAYSIA AIRLINES"
+          "UK": "VISTARA",
+          "AI": "AIR INDIA"
       }
   }
 }

@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image'
-import qatar_logo from "../../../public/image/qatar_logo.jpg"
 
-const Result = ({ result, dictionaries }) => {
+
+const Result = ({img, result, dictionaries }) => {
 
   const convertPTtoTime = (ptString) => {
     const hours = ptString?.match(/(\d+)H/) ? ptString?.match(/(\d+)H/)[1] : null;
@@ -22,19 +22,19 @@ const Result = ({ result, dictionaries }) => {
         <div className="w-[75vw] flex flex-col bg-white py-6 h-full px-2 pr-16 rounded-tl-xl rounded-bl-xl">
           <div className="flex justify-between items-center">
             <div className="w-[6rem]">
-              {/* <Image
-                src={qatar_logo}
+              <Image
+                src={img}
                 width={500}
                 height={500}
                 alt="qatar airlines logo"
                 layout-fill="responsive"
                 style="cover"
                 className=""
-              /> */}
+              />
             </div>
 
             {result?.itineraries[0]?.segments?.map((iter, ind) => (
-              <div className='flex flex-row' key={"iter" + ind}>
+              <div className='flex flex-row mx-6' key={"iter" + ind}>
 
                 <div className="flex flex-col mr-3">
                   <div className="flex flex-col font-medium">
@@ -65,7 +65,7 @@ const Result = ({ result, dictionaries }) => {
 
                   <p className="mt-4">{iter?.arrival?.iataCode}</p>
                 </div>
-                
+
                 <div className="flex flex-col">
                   <div className="flex flex-col">
                     <h1 className="text-sm text-gray-500">Total Time</h1>
