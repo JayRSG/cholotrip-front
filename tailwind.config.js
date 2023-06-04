@@ -42,8 +42,8 @@ module.exports = {
 			colors: {
 				"main-color": "#F8F6F6",
 				"btn-color": "#2568f8",
-				"payment-color": "#07c13e",
-				"intermediate-level-color": "#6796FC",
+				"header-color": "#9BC6C4",
+				"footer-color": "#007677",
 				"advance-level-color": "#D84141",
 				"admin-nav-color": "#2B499B",
 				"delete-color": "#9B2B2B",
