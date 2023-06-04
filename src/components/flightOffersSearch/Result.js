@@ -6,7 +6,7 @@ import qatar_logo from "../../../public/image/qatar_logo.jpg"
 const Result = ({ result, dictionaries }) => {
 
   const convertPTtoTime = (ptString) => {
-    const hours = ptString?.match(/(\d+)H/) ? ptString?.match(/(\d+)H/)[1]: null;
+    const hours = ptString?.match(/(\d+)H/) ? ptString?.match(/(\d+)H/)[1] : null;
     const minutes = ptString?.match(/(\d+)M/) ? ptString?.match(/(\d+)M/)[1] : null;
 
     return hours && minutes ?
@@ -65,17 +65,20 @@ const Result = ({ result, dictionaries }) => {
 
                   <p className="mt-4">{iter?.arrival?.iataCode}</p>
                 </div>
-              </div>))}
+                
+                <div className="flex flex-col">
+                  <div className="flex flex-col">
+                    <h1 className="text-sm text-gray-500">Total Time</h1>
 
-            <div className="flex flex-col">
-              <div className="flex flex-col">
-                <h1 className="text-sm text-gray-500">Total Time</h1>
+                    <p className="text-gray-800">{convertPTtoTime(result?.itineraries[0]?.duration)}</p>
+                  </div>
 
-                <p className="text-gray-800">{convertPTtoTime(result?.itineraries[0]?.duration)}</p>
+                  <p className="mt-4">{result?.itineraries[0]?.segments[0]?.numberOfStops != 0 ? result?.itineraries[0]?.segments[0]?.numberOfStops + " Stop" : "Non-Stop"}</p>
+                </div>
               </div>
+            ))}
 
-              <p className="mt-4">{result?.itineraries[0]?.segments[0]?.numberOfStops != 0 ? result?.itineraries[0]?.segments[0]?.numberOfStops + " Stop" : "Non-Stop"}</p>
-            </div>
+
           </div>
 
           <hr className="w-full bg-gray-300 mt-4" />
