@@ -46,14 +46,22 @@ const Search = (props) => {
 				<div className='flex flex-col bg-white border border-white rounded-bl-xl rounded-br-xl rounded-tr-xl w-[70vw] px-4 py-4 shadow-btn'>
 					<div className='flex items-center'>
 						<div className=''>
-							<select className='p-2.5 bg-white outline-none' name='oneWay' onChange={handleInputChanges} value={travelData?.oneWay}>
+							<select
+								className='p-2.5 bg-white outline-none w-[8rem]'
+								name='oneWay'
+								onChange={handleInputChanges}
+								value={travelData?.oneWay}>
 								<option value={false}>Round trip</option>
 								<option value={true}>One Way</option>
 							</select>
 						</div>
 
-						<div className='ml-6'>
-							<select className='p-2.5 bg-white outline-none' name='cabin' onChange={handleInputChanges} value={travelData?.Cabin}>
+						<div className='ml-7'>
+							<select
+								className='p-2.5 bg-white outline-none w-[8rem]'
+								name='cabin'
+								onChange={handleInputChanges}
+								value={travelData?.Cabin}>
 								<option value={"Economy"}>Economy</option>
 								<option value={"Premium Economy"}>Premium Economy</option>
 								<option value={"Business Class"}>Business Class</option>
@@ -69,15 +77,25 @@ const Search = (props) => {
 
 								<select
 									name='originLocationCode'
-									className=' text-gray-500 font-bold bg-white outline-none appearance-none'
+									className=' text-gray-500 font-bold bg-white outline-none appearance-none cursor-pointer'
 									onChange={handleInputChanges}
 									value={travelData?.originLocationCode}>
 									<option></option>
-									<option value={"DAC"}>Dhaka</option>
-									<option value={"CGP"}>Chittagong</option>
-									<option value={"CCU"}>Kolkata</option>
-									<option value={"DEL"}>Delhi</option>
-									<option value={"MAA"}>Chennai</option>
+									<option value={"DAC"} className='text-gray-500 font-bold'>
+										Dhaka
+									</option>
+									<option value={"CGP"} className='text-gray-500 font-bold'>
+										Chittagong
+									</option>
+									<option value={"CCU"} className='text-gray-500 font-bold'>
+										Kolkata
+									</option>
+									<option value={"DEL"} className='text-gray-500 font-bold'>
+										Delhi
+									</option>
+									<option value={"MAA"} className='text-gray-500 font-bold'>
+										Chennai
+									</option>
 								</select>
 							</div>
 
@@ -86,15 +104,25 @@ const Search = (props) => {
 
 								<select
 									name='destinationLocationCode'
-									className=' text-gray-500 font-bold bg-white outline-none appearance-none'
+									className=' text-gray-500 font-bold bg-white outline-none appearance-none cursor-pointer'
 									onChange={handleInputChanges}
 									value={travelData?.destinationLocationCode}>
 									<option></option>
-									<option value={"CGP"}>Chittagong</option>
-									<option value={"DAC"}>Dhaka</option>
-									<option value={"CCU"}>Kolkata</option>
-									<option value={"DEL"}>Delhi</option>
-									<option value={"MAA"}>Chennai</option>
+									<option value={"CGP"} className='text-gray-500 font-bold'>
+										Chittagong
+									</option>
+									<option value={"DAC"} className='text-gray-500 font-bold'>
+										Dhaka
+									</option>
+									<option value={"CCU"} className='text-gray-500 font-bold'>
+										Kolkata
+									</option>
+									<option value={"DEL"} className='text-gray-500 font-bold'>
+										Delhi
+									</option>
+									<option value={"MAA"} className='text-gray-500 font-bold'>
+										Chennai
+									</option>
 								</select>
 							</div>
 
@@ -154,22 +182,36 @@ const Search = (props) => {
 
 								<select
 									name='adults'
-									className=' text-gray-500 font-bold bg-white outline-none appearance-none'
+									className=' text-gray-500 font-bold bg-white outline-none appearance-none cursor-pointer'
 									onChange={handleInputChanges}
 									value={travelData?.adults}>
-									<option value={"0"}>Select Travellers</option>
-									<option value={"1"}>1 travelers</option>
-									<option value={"2"}>2 travelers</option>
-									<option value={"3"}>3 travelers</option>
-									<option value={"4"}>4 travelers</option>
-									<option value={"5"}>5 travelers</option>
-									<option value={"6"}>6 travelers</option>
+									<option value={"0"} className='text-gray-500'>
+										Select Travellers
+									</option>
+									<option value={"1"} className='text-gray-500 font-bold'>
+										1 travelers
+									</option>
+									<option value={"2"} className='text-gray-500 font-bold'>
+										2 travelers
+									</option>
+									<option value={"3"} className='text-gray-500 font-bold'>
+										3 travelers
+									</option>
+									<option value={"4"} className='text-gray-500 font-bold'>
+										4 travelers
+									</option>
+									<option value={"5"} className='text-gray-500 font-bold'>
+										5 travelers
+									</option>
+									<option value={"6"} className='text-gray-500 font-bold'>
+										6 travelers
+									</option>
 								</select>
 							</div>
 						</div>
 
 						<button
-							className='flex ml-6 items-center bg-blue-600 w-[6rem] h-[5rem] rounded-lg justify-center'
+							className='flex ml-6 items-center bg-blue-600 w-[7rem] h-[5.7rem] rounded-lg justify-center hover:scale-105 transform transition-all duration-500 cursor-pointer'
 							onClick={(e) => {
 								e.stopPropagation();
 								submitHandler(e);

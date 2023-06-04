@@ -211,7 +211,7 @@ const Result = ({ result, dictionaries }) => {
 							</div>
 						</div>
 
-						<div className='bg-blue-800 w-full rounded-lg h-[3rem] flex items-center justify-center'>
+						<div className='bg-blue-800 w-full rounded-lg h-[3rem] flex items-center justify-center hover:scale-105 transform transition-all duration-500 cursor-pointer'>
 							<p className='text-gray-100'>Book Now</p>
 						</div>
 
