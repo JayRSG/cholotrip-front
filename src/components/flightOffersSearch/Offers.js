@@ -4,6 +4,7 @@ import { useflightSearch } from "@/hooks/flightSearch"
 import Result from "./Result"
 import inputs from '../../data/input.json'
 import results from '../../data/result.json'
+import qatar_logo from "../../../public/image/qatar_logo.jpg"
 
 const Offers = () => {
   const [travelData, setTravelData] = useState({
@@ -52,7 +53,7 @@ const Offers = () => {
           cachedOffer?.data?.map((flightData, ind) => (
             <div key={'result' + ind} className="flex flex-col justify-center items-center w-full h-15vh">
               <div className="m-3">
-                <Result result={flightData} dictionaries={cachedOffer?.dictionaries} />
+                <Result img={qatar_logo} result={flightData} dictionaries={cachedOffer?.dictionaries} />
               </div>
             </div>
           ))
