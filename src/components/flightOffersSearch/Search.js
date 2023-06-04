@@ -177,36 +177,66 @@ const Search = (props) => {
 						</div>
 
 						<div className='flex flex-col items-center ml-6'>
-							<div className='border border-gray-300 rounded-lg flex flex-col z-10 p-4 pr-16'>
-								<p className='mb-2'>Travelers</p>
+							<div className='border border-gray-300 rounded-lg flex flex-col z-10 p-4 '>
+								<p className='mb-2'>Travellers</p>
 
-								<select
-									name='adults'
-									className=' text-gray-500 font-bold bg-white outline-none appearance-none cursor-pointer'
-									onChange={handleInputChanges}
-									value={travelData?.adults}>
-									<option value={"0"} className='text-gray-500'>
-										Select Travellers
-									</option>
-									<option value={"1"} className='text-gray-500 font-bold'>
-										1 travelers
-									</option>
-									<option value={"2"} className='text-gray-500 font-bold'>
-										2 travelers
-									</option>
-									<option value={"3"} className='text-gray-500 font-bold'>
-										3 travelers
-									</option>
-									<option value={"4"} className='text-gray-500 font-bold'>
-										4 travelers
-									</option>
-									<option value={"5"} className='text-gray-500 font-bold'>
-										5 travelers
-									</option>
-									<option value={"6"} className='text-gray-500 font-bold'>
-										6 travelers
-									</option>
-								</select>
+								<div className='flex justify-between w-full'>
+									<select
+										name='adults'
+										className=' text-gray-500 font-bold bg-white outline-none appearance-none cursor-pointer'
+										onChange={handleInputChanges}
+										value={travelData?.adults}>
+										<option value={"0"} className='text-gray-500'>
+											Select adults
+										</option>
+										<option value={"1"} className='text-gray-500 font-bold'>
+											1 adults
+										</option>
+										<option value={"2"} className='text-gray-500 font-bold'>
+											2 adults
+										</option>
+										<option value={"3"} className='text-gray-500 font-bold'>
+											3 adults
+										</option>
+										<option value={"4"} className='text-gray-500 font-bold'>
+											4 adults
+										</option>
+										<option value={"5"} className='text-gray-500 font-bold'>
+											5 adults
+										</option>
+										<option value={"6"} className='text-gray-500 font-bold'>
+											6 adults
+										</option>
+									</select>
+
+									<select
+										name='childrens'
+										className=' text-gray-500 font-bold bg-white outline-none appearance-none cursor-pointer ml-4'
+										onChange={handleInputChanges}
+										value={travelData?.childrens}>
+										<option value={"0"} className='text-gray-500'>
+											Select childrens
+										</option>
+										<option value={"1"} className='text-gray-500 font-bold'>
+											1 children
+										</option>
+										<option value={"2"} className='text-gray-500 font-bold'>
+											2 children
+										</option>
+										<option value={"3"} className='text-gray-500 font-bold'>
+											3 children
+										</option>
+										<option value={"4"} className='text-gray-500 font-bold'>
+											4 children
+										</option>
+										<option value={"5"} className='text-gray-500 font-bold'>
+											5 children
+										</option>
+										<option value={"6"} className='text-gray-500 font-bold'>
+											6 children
+										</option>
+									</select>
+								</div>
 							</div>
 						</div>
 

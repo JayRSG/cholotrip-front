@@ -197,17 +197,39 @@ const Result = ({ result, dictionaries }) => {
 
 				<div className='w-[10vw] bg-blue-200 absolute h-full px-4 right-0 overflow-hidden rounded-tr-xl rounded-br-xl flex items-center'>
 					<div className='flex flex-col items-center w-full'>
-						<div className='flex justify-between w-full mb-4'>
-							<div className='flex flex-col'>
-								<p className='text-sm text-gray-500'>Availlable</p>
+						<div className='flex flex-col w-full'>
+							<p className='font-title font-bold text-admin-nav-color self-start pb-2'>For Adults</p>
 
-								<p className='text-base'>{result?.numberOfBookableSeats} Seats</p>
+							<div className='flex justify-between w-full mb-4'>
+								<div className='flex flex-col'>
+									<p className='text-sm text-gray-500'>Availlable</p>
+
+									<p className='text-base'>{result?.numberOfBookableSeatsForAdults} Seats</p>
+								</div>
+
+								<div className='flex flex-col'>
+									<p className='text-sm text-gray-500'>{result?.travelerPricings[0]?.price?.currency}</p>
+
+									<p className='text-base'>{result?.travelerPricings[0]?.price?.total}</p>
+								</div>
 							</div>
+						</div>
 
-							<div className='flex flex-col'>
-								<p className='text-sm text-gray-500'>{result?.price?.currency}</p>
+						<div className='flex flex-col w-full'>
+							<p className='font-title font-bold text-admin-nav-color self-start pb-2'>For Children</p>
 
-								<p className='text-base'>{result?.price?.total}</p>
+							<div className='flex justify-between w-full mb-4'>
+								<div className='flex flex-col'>
+									<p className='text-sm text-gray-500'>Availlable</p>
+
+									<p className='text-base'>{result?.numberOfBookableSeatsForChildren} Seats</p>
+								</div>
+
+								<div className='flex flex-col'>
+									<p className='text-sm text-gray-500'>{result?.travelerPricings[1]?.price?.currency}</p>
+
+									<p className='text-base'>{result?.travelerPricings[1]?.price?.total}</p>
+								</div>
 							</div>
 						</div>
 
@@ -215,7 +237,7 @@ const Result = ({ result, dictionaries }) => {
 							<p className='text-gray-100'>Book Now</p>
 						</div>
 
-						<div className='text-sm text-gray-500 mt-2'>{"Grand Total: " + result?.price?.currency + " " + result?.price?.total}</div>
+						<div className='text-sm text-gray-500 mt-2'>{"Grand Total: " + result?.price?.grandTotal}</div>
 					</div>
 				</div>
 			</div>
