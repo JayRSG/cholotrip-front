@@ -1,0 +1,11 @@
+{
+  "originLocationCode": "CGP",
+  "destinationLocationCode": "MAA",
+  "departureDate": "2023-06-17",
+  "returnDate": "2023-07-01",
+  "adults": 1,
+  "max": 5,
+  "currencyCode": "USD",
+  "oneWay": false,
+  "includedAirlineCodes": ""
+}

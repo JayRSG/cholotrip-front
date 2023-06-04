@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import Search from "./Search"
 import { useflightSearch } from "@/hooks/flightSearch"
 import Result from "./Result"
+import inputs from '../../data/input.json'
+import results from '../../data/result.json'
 
 const Offers = () => {
   const [travelData, setTravelData] = useState({
@@ -15,14 +17,29 @@ const Offers = () => {
     oneWay: false,
     includedAirlineCodes: ""
   })
-  const [cachedOffer, setCachedOffer] = useState({})
-  const { flightOffers, flightOffersError, flightOffersLoading, mutateFlightOffers } = useflightSearch(travelData);
+
+  const [cachedOffer, setCachedOffer] = useState(null)
+  // const { flightOffers, flightOffersError, flightOffersLoading, mutateFlightOffers } = useflightSearch(travelData);
+
 
   useEffect(() => {
-    if (flightOffers) {
-      setCachedOffer(flightOffers)
+    if (inputs) {
+      setTravelData(inputs)
     }
-  }, [flightOffers])
+
+    if (results) {
+      setCachedOffer(results)
+    }
+
+  }, [inputs, results])
+
+
+
+  // useEffect(() => {
+  //   if (flightOffers) {
+  //     setCachedOffer(flightOffers)
+  //   }
+  // }, [flightOffers])
   return (
     <>
       <div className="bg-blue-300">
@@ -31,14 +48,14 @@ const Offers = () => {
         </div>
 
 
-        {!flightOffersLoading ?
+        {
           cachedOffer?.data?.map((flightData, ind) => (
             <div key={'result' + ind} className="flex flex-col justify-center items-center w-full h-15vh">
               <div className="m-3">
                 <Result result={flightData} dictionaries={cachedOffer?.dictionaries} />
               </div>
             </div>
-          )) : "Loading"
+          ))
         }
 
       </div>
