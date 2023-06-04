@@ -1,18 +1,15 @@
-import Offers from "@/components/flightOffersSearch/Offers"
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Offers from "@/components/flightOffersSearch/Offers";
 
 const offers = () => {
-  return (
-    <>
-      <div className="">
-        <h1>AIRCRAFT</h1>
-      </div>
-      <Offers />
-      <div className="my-30 pb-3 bg-blue-300">
-        <h1>AIRCRAFT</h1>
-      </div>
-    </>
+	return (
+		<>
+			<Header />
+			<Offers />
+			<Footer />
+		</>
+	);
+};
 
-  )
-}
-
-export default offers
+export default offers;
