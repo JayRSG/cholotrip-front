@@ -12,6 +12,7 @@ const Offers = () => {
 		departureDate: "",
 		returnDate: "",
 		adults: 0,
+		childrens: 0,
 		max: 0,
 		currencyCode: "USD",
 		oneWay: false,

@@ -15,7 +15,8 @@
           "oneWay": false,
           "lastTicketingDate": "2023-06-15",
           "lastTicketingDateTime": "2023-06-15",
-          "numberOfBookableSeats": 4,
+          "numberOfBookableSeatsForAdults": 4,
+          "numberOfBookableSeatsForChildren": 5,
           "itineraries": [
               {
                   "duration": "PT29H55M",
