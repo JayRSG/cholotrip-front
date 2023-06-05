@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import Image from "next/image";
 import logo from "../../../public/image/logo.png";
 
@@ -17,100 +16,91 @@ const Result = ({ result, dictionaries }) => {
       <div className='flex w-[90vw] items-center relative overflow-hidden font-body'>
         <div className='w-[80vw] flex flex-col bg-white pb-6 pt-0 h-full px-2 pr-16 rounded-tl-xl rounded-bl-xl'>
 
-          {result?.itineraries?.map((iter, iter_ind) => {
-            return (
-              <>
-                <div key={"iter_" + iter_ind} className='flex flex-col'>
-                  <div className="flex flex-col">
-                  <h1 className='relative left-0 font-title font-bold p-2 text-xl text-admin-nav-color'>{iter_ind % 2 ? "Return Journey" : "One Way"}</h1>
-                  <p className="lef-0 -my-1 pl-2 text-sm text-admin-nav-color">Total Duration: {convertPTtoTime(iter?.duration)} </p>
-                  
-                  
+          {result?.itineraries?.map((iter, iter_ind) => (
+            <div key={"iter_" + iter_ind}>
+              <div className='flex flex-col'>
+                <h1 className='relative left-0 font-title font-bold p-2 text-xl text-admin-nav-color'>{iter_ind % 2 ? "Return Journey" : "One Way"}</h1>
+
+                <div className='flex items-center'>
+                  <div className='w-[6rem] mr-16'>
+                    <Image
+                      src={logo}
+                      alt="airlines_logo"
+                      width={590}
+                      height={590}
+                      layout-fill="responsive"
+                    />
                   </div>
 
-                  <div className='flex items-center'>
-                    <div className='w-[6rem] mr-16'>
-                      {/* <Image
-									src={logo}
-									width={590}
-									height={590}
-									alt='qatar airlines logo'
-									layout-fill='responsive'
-									style='cover'
-									className=''
-								/> */}
-                    </div>
-
-                    <div
-                      className={`flex items-center w-full ${iter?.segments.length >= 3
-                        ? "justify-between"
-                        : iter?.segments.length == 2
-                          ? "justify-around"
-                          : "justify-center"
-                        }`}>
-                      {iter?.segments?.map((segs, ind) => (
-                        <div className={`flex `} key={"segs_" + ind}>
-                          <div className='flex flex-col mr-3'>
-                            <div className='font-bold font-title w-[6rem]'>
-                              <h1>{dictionaries?.carriers[segs?.carrierCode]}</h1>
-                            </div>
-
-                            <p className='text-gray-500 mt-4 text-sm'>
-                              {result?.travelerPricings[0]?.fareDetailsBySegment[ind]?.cabin}
-                            </p>
+                  <div
+                    className={`flex items-center w-full ${iter?.segments.length >= 3
+                      ? "justify-between"
+                      : iter?.segments.length == 2
+                        ? "justify-around"
+                        : "justify-center"
+                      }`}>
+                    {iter?.segments?.map((segs, ind) => (
+                      <div className={`flex `} key={"segs_" + ind}>
+                        <div className='flex flex-col mr-3'>
+                          <div className='font-bold font-title w-[6rem]'>
+                            <h1>{dictionaries?.carriers[segs?.carrierCode]}</h1>
                           </div>
 
-                          <div className='flex flex-col px-2'>
-                            <div className='flex flex-col'>
-                              <h1 className='text-sm text-gray-500'>Departure Time</h1>
-
-                              {/* <p className="text-gray-800">{(segs?.departure?.at).replace("T", " ")}</p> */}
-                              <p className='text-gray-800 text-sm mt-1'>
-                                {(segs?.departure?.at).split("T")[0]} <br /> {(segs?.departure?.at).split("T")[1]}
-                              </p>
-                            </div>
-
-                            <p className='mt-4'>{segs?.departure?.iataCode}</p>
-                          </div>
-
-                          <div className='flex flex-col px-2'>
-                            <div className='flex flex-col'>
-                              <h1 className='text-sm text-gray-500'>Arrival Time</h1>
-
-                              <p className='text-gray-800 text-sm mt-1'>
-                                {(segs?.arrival?.at).split("T")[0]} <br /> {(segs?.arrival?.at).split("T")[1]}
-                              </p>
-                            </div>
-
-                            <p className='mt-4'>{segs?.arrival?.iataCode}</p>
-                          </div>
-
-                          <div className='flex flex-col px-2'>
-                            <div className='flex flex-col'>
-                              <h1 className='text-sm text-gray-500'>Duration</h1>
-
-                              <p className='text-gray-800 text-sm mt-1'>{convertPTtoTime(segs?.duration)}</p>
-                            </div>
-
-                            <p className='text-sm'>
-                              {segs?.numberOfStops != 0
-                                ? segs?.numberOfStops + " Stop"
-                                : "Non-Stop"}
-                            </p>
-
-                            <p className='mt-4'>Flight: {segs?.carrierCode + " " + segs?.aircraft?.code}</p>
-                          </div>
-
+                          <p className='text-gray-500 mt-4 text-sm'>
+                            {result?.travelerPricings[0]?.fareDetailsBySegment[ind]?.cabin}
+                          </p>
                         </div>
-                      ))}
-                    </div>
+
+                        <div className='flex flex-col px-2'>
+                          <div className='flex flex-col'>
+                            <h1 className='text-sm text-gray-500'>Departure Time</h1>
+
+                            {/* <p className="text-gray-800">{(segs?.departure?.at).replace("T", " ")}</p> */}
+                            <p className='text-gray-800 text-sm mt-1'>
+                              {(segs?.departure?.at).split("T")[0]} <br /> {(segs?.departure?.at).split("T")[1]}
+                            </p>
+                          </div>
+
+                          <p className='mt-4'>{segs?.departure?.iataCode}</p>
+                        </div>
+
+                        <div className='flex flex-col px-2'>
+                          <div className='flex flex-col'>
+                            <h1 className='text-sm text-gray-500'>Arrival Time</h1>
+
+                            <p className='text-gray-800 text-sm mt-1'>
+                              {(segs?.arrival?.at).split("T")[0]} <br /> {(segs?.arrival?.at).split("T")[1]}
+                            </p>
+                          </div>
+
+                          <p className='mt-4'>{segs?.arrival?.iataCode}</p>
+                        </div>
+
+                        <div className='flex flex-col px-2'>
+                          <div className='flex flex-col'>
+                            <h1 className='text-sm text-gray-500'>Duration</h1>
+
+                            <p className='text-gray-800 text-sm mt-1'>{convertPTtoTime(segs?.duration)}</p>
+                          </div>
+
+                          <p className='text-sm'>
+                            {segs?.numberOfStops != 0
+                              ? segs?.numberOfStops + " Stop"
+                              : "Non-Stop"}
+                          </p>
+
+                          <p className='mt-4'>Flight: {segs?.carrierCode + " " + segs?.aircraft?.code}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                <hr className="" w-full bg-gray-500 mt-4 />
-              </>
-            )
+              </div>
 
-          })}
+              <p className="lef-0 -my-1 p-2 text-sm text-admin-nav-color">Total Duration: {convertPTtoTime(iter?.duration)} </p>
+              <hr className="w-full bg-gray-500 mt-4" />
+            </div>
+          ))}
           <div className='flex justify-between '>
             <div className='ml-[11.5rem]'>
               <select className='p-2.5 outline-none text-gray-400 text-lg w-[17rem]'>
@@ -124,6 +114,7 @@ const Result = ({ result, dictionaries }) => {
                 {result?.itineraries[0]?.segments[0]?.carrierCode + " " + result?.itineraries[0]?.segments[0]?.aircraft?.code}
               </p>
             </div> */}
+
           </div>
         </div>
 
