@@ -15,14 +15,21 @@ const Search = (props) => {
   const handleInputChanges = (e) => {
     setTravelData({
       ...travelData,
+      submit: false,
       [e.currentTarget.name]: e.currentTarget.value,
     });
   };
 
   const submitHandler = (e) => {
     e.preventDefault();
-    setTravelData({ ...travelData, max: 5 });
+    setTravelData({ ...travelData, submit: true });
   };
+
+  useEffect(() => {
+    if (travelData?.oneWay == "true") {
+      setTravelData({ ...travelData, submit: false, returnDate: "" })
+    }
+  }, [travelData?.oneWay])
 
 
   return (
@@ -100,6 +107,24 @@ const Search = (props) => {
                   <option value={"CCU"} className='text-gray-500 font-bold'>
                     Kolkata
                   </option>
+                  <option value={"ZYL"} className='text-gray-500 font-bold'>
+                    Sylhet
+                  </option>
+                  <option value={"SPD"} className='text-gray-500 font-bold'>
+                    Saidpur
+                  </option>
+                  <option value={"BKK"} className='text-gray-500 font-bold'>
+                    Bangkok
+                  </option>
+                  <option value={"DXB"} className='text-gray-500 font-bold'>
+                    Dubai
+                  </option>
+                  <option value={"CMB"} className='text-gray-500 font-bold'>
+                    Colombo
+                  </option>
+                  <option value={"BLR"} className='text-gray-500 font-bold'>
+                    Bangalore
+                  </option>
                   <option value={"DEL"} className='text-gray-500 font-bold'>
                     Delhi
                   </option>
@@ -123,6 +148,9 @@ const Search = (props) => {
                   </option>
                   <option value={"DAC"} className='text-gray-500 font-bold'>
                     Dhaka
+                  </option>
+                  <option value={"CBA"} className='text-gray-500 font-bold'>
+                    Cox's Bazar
                   </option>
                   <option value={"CCU"} className='text-gray-500 font-bold'>
                     Kolkata

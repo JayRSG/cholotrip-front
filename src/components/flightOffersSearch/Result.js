@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import logo from "../../../public/image/logo.png";
+import logo from "../../../public/image/BG.svg";
 
 const Result = ({ result, dictionaries }) => {
   const convertPTtoTime = (ptString) => {
@@ -19,15 +19,15 @@ const Result = ({ result, dictionaries }) => {
           {result?.itineraries?.map((iter, iter_ind) => (
             <div key={"iter_" + iter_ind}>
               <div className='flex flex-col'>
-                <h1 className='relative left-0 font-title font-bold p-2 text-xl text-admin-nav-color'>{iter_ind % 2 ? "Return Journey" : "One Way"}</h1>
+                <h1 className='relative left-0 font-title font-bold mx-11 mt-5 text-xl text-black'>{iter_ind % 2 ? "Return Journey" : "One Way"}</h1>
 
                 <div className='flex items-center'>
-                  <div className='w-[6rem] mr-16'>
+                  <div className='w-[6rem] mx-12' style={{width: '60px', height: '60px'}}>
                     <Image
                       src={logo}
                       alt="airlines_logo"
-                      width={590}
-                      height={590}
+                      width={500}
+                      height={500}
                       layout-fill="responsive"
                     />
                   </div>
@@ -47,11 +47,11 @@ const Result = ({ result, dictionaries }) => {
                           </div>
 
                           <p className='text-gray-500 mt-4 text-sm'>
-                            {result?.travelerPricings[0]?.fareDetailsBySegment[ind]?.cabin}
+                          Flight: {segs?.carrierCode + " " + segs?.aircraft?.code}
                           </p>
                         </div>
 
-                        <div className='flex flex-col px-2'>
+                        <div className='flex flex-col px-7'>
                           <div className='flex flex-col'>
                             <h1 className='text-sm text-gray-500'>Departure Time</h1>
 
@@ -64,7 +64,21 @@ const Result = ({ result, dictionaries }) => {
                           <p className='mt-4'>{segs?.departure?.iataCode}</p>
                         </div>
 
-                        <div className='flex flex-col px-2'>
+                        <div className='flex flex-col px-5'>
+                          <div className='flex flex-col'>
+                            <h1 className='text-sm text-gray-500'>Duration</h1>
+
+                            <p className='text-gray-800 text-sm mt-1'>{convertPTtoTime(segs?.duration)}</p>
+                          </div>
+
+                          {/* <p className='text-sm'>
+                            {segs?.numberOfStops != 0
+                              ? segs?.numberOfStops + " Stop"
+                              : "Non-Stop"}
+                          </p> */}
+                        </div>
+
+                        <div className='flex flex-col px-5'>
                           <div className='flex flex-col'>
                             <h1 className='text-sm text-gray-500'>Arrival Time</h1>
 
@@ -76,28 +90,13 @@ const Result = ({ result, dictionaries }) => {
                           <p className='mt-4'>{segs?.arrival?.iataCode}</p>
                         </div>
 
-                        <div className='flex flex-col px-2'>
-                          <div className='flex flex-col'>
-                            <h1 className='text-sm text-gray-500'>Duration</h1>
-
-                            <p className='text-gray-800 text-sm mt-1'>{convertPTtoTime(segs?.duration)}</p>
-                          </div>
-
-                          <p className='text-sm'>
-                            {segs?.numberOfStops != 0
-                              ? segs?.numberOfStops + " Stop"
-                              : "Non-Stop"}
-                          </p>
-
-                          <p className='mt-4'>Flight: {segs?.carrierCode + " " + segs?.aircraft?.code}</p>
-                        </div>
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
 
-              <p className="lef-0 -my-1 p-2 text-sm text-admin-nav-color">Total Duration: {convertPTtoTime(iter?.duration)} </p>
+              {/* <p className="lef-0 -my-1 p-2 text-sm text-admin-nav-color">Total Duration: {convertPTtoTime(iter?.duration)} </p> */}
               <hr className="w-full bg-gray-500 mt-4" />
             </div>
           ))}

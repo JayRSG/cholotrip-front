@@ -11,10 +11,11 @@ const Offers = () => {
     returnDate: "",
     adults: 0,
     childrens: 0,
-    max: 0,
+    max: 5,
     currencyCode: "USD",
     oneWay: false,
     includedAirlineCodes: "",
+    submit: false
   });
 
   const [cachedOffer, setCachedOffer] = useState(null);
@@ -33,13 +34,16 @@ const Offers = () => {
         </div>
 
 
-        {cachedOffer?.data?.map((flightData, ind) => (
-          <div key={"result" + ind} className='flex flex-col justify-center items-center w-full h-15vh'>
-            <div className='my-4 shadow-btn rounded-xl'>
-              <Result result={flightData} dictionaries={cachedOffer?.dictionaries} />
+        {cachedOffer?.data?.length > 0 ?
+          cachedOffer?.data?.map((flightData, ind) => (
+            <div key={"result" + ind} className='flex flex-col justify-center items-center w-full h-15vh'>
+              <div className='my-4 shadow-btn rounded-xl'>
+                <Result result={flightData} dictionaries={cachedOffer?.dictionaries} />
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+          :
+          <div>No Flights Founds</div>}
       </div>
     </>
   );

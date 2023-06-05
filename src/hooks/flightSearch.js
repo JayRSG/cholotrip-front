@@ -9,7 +9,8 @@ export const useflightSearch = (params) => {
         parameters?.destinationLocationCode &&
         parameters?.departureDate != "" &&
         parameters?.adults != 0 &&
-        parameters?.max != 0 ? true : false
+        parameters?.max != 0 &&
+        parameters?.submit == true ? true : false
     )
   }
 

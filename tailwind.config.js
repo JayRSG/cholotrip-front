@@ -240,7 +240,7 @@ module.exports = {
 				active: "0px 1px 2px rgba(0, 0, 0, 0.5)",
 			},
 			fontFamily: {
-				title: "Playfair Display",
+				title: "Roboto",
 				body: "Roboto",
 				certificate: ["Satisfy", "cursive"],
 			},
